@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: demo
+  config:
+    activate:
+      on-profile:
+        - service001
+        - service002
+
+server:
+  port: 8080
+      
+service:
+  external:
+    location: properties
+    mount:
+      path:
+        type: FILE
+        value: C:\eclipse\workspace\demo\src\main\resources\mount
+
+logging:
+  level:
+    org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager: WARN
+
+crypto:
+  gpki:
+    mount-path: C:/gpki
+    copy-path: C:/gpki
+    cert-id: SVR1741845003
+    env-key-password: godakd03!
+    sig-key-password: godakd03!
+    test-gpki: true
+    ldap-url: ldap://152.99.57.127:389/cn=

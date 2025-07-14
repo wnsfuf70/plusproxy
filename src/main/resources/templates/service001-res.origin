@@ -1,0 +1,17 @@
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+	<Header>
+		<commonHeader xmlns="http://ccais.mopas.go.kr/dh/nrw/services/hf/UnRefundInfoService/types">
+			<serviceName>UnRefundInfoService</serviceName>
+			<useSystemCode>ESBTEST</useSystemCode>
+			<certServerId>SVR1311000030</certServerId>
+			<transactionUniqueId></transactionUniqueId>
+			<userDeptCode>ESBTEST</userDeptCode>
+			<userName>홍길동</userName>
+		</commonHeader>
+	</Header>
+	<Body>
+		<getUnRefundInfo xmlns="http://ccais.mopas.go.kr/dh/ecid/services/hf/UnRefundInfoService/types">
+			<noRefundAamt>10000</noRefundAamt>
+		</getUnRefundInfo>
+	</Body>
+</Envelope>

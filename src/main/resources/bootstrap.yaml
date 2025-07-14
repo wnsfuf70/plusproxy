@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    include:
+    - service001
+    - service002
+    
+  cloud:
+    config:
+      enabled: false
+    kubernetes:
+      reload:
+        enabled: true
+      config:
+        name: lnk-was-api-hion-cm
+        namespace: link-prod
+      secrets:
+        enable-api: true
+        name: passwd-secret
+        namespace: link-prod
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

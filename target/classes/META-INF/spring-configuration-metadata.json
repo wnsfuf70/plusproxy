@@ -1,0 +1,65 @@
+{
+  "groups": [
+    {
+      "name": "crypto.gpki",
+      "type": "kr.api.link.cmmn.security.config.GpkiProperties",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    },
+    {
+      "name": "service001.v1",
+      "type": "kr.api.link.mohw.service001.v1.Service001Configuration",
+      "sourceType": "kr.api.link.mohw.service001.v1.Service001Configuration"
+    },
+    {
+      "name": "service002.v1",
+      "type": "kr.api.link.mohw.service002.v1.Service002Configuration",
+      "sourceType": "kr.api.link.mohw.service002.v1.Service002Configuration"
+    },
+    {
+      "name": "service003.v1",
+      "type": "kr.api.link.mohw.service003.v1.Service003Configuration",
+      "sourceType": "kr.api.link.mohw.service003.v1.Service003Configuration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "crypto.gpki.cert-id",
+      "type": "java.lang.String",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    },
+    {
+      "name": "crypto.gpki.copy-path",
+      "type": "java.lang.String",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    },
+    {
+      "name": "crypto.gpki.env-key-password",
+      "type": "java.lang.String",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    },
+    {
+      "name": "crypto.gpki.ldap-url",
+      "type": "java.lang.String",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    },
+    {
+      "name": "crypto.gpki.mount-path",
+      "type": "java.lang.String",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    },
+    {
+      "name": "crypto.gpki.sig-key-password",
+      "type": "java.lang.String",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    },
+    {
+      "name": "crypto.gpki.test-gpki",
+      "type": "java.lang.Boolean",
+      "sourceType": "kr.api.link.cmmn.security.config.GpkiProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

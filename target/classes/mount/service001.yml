@@ -1,0 +1,48 @@
+path: /api/hello/service/001
+
+logic:
+  version: v1
+  type: BYPASS
+  component:
+
+convert:
+    resource-location: FILE
+    req-origin:
+      type: json
+      templete-path: C:\\eclipse\\workspace\\demo\\src\\main\\resources\\templates\\service001-req.origin
+    req-vm:
+      type: application/xml; charset=utf-8
+      templete-path: C:\\eclipse\\workspace\\demo\\src\\main\\resources\\templates\\service001-req.vm
+    res-origin:
+      type: xml
+      templete-path: C:\\eclipse\\workspace\\demo\\src\\main\\resources\\templates\\service001-res.origin
+    res-vm:
+      type: json
+      templete-path: C:\\eclipse\\workspace\\demo\\src\\main\\resources\\templates\\service001-res.vm
+
+backend:
+  address: http://127.0.0.1:13000/backend/hello/service/001/A
+  method: POST
+  header:
+    static-prop:
+      a: 30
+      b: 4
+
+crypto:
+  use: true
+  type: GPKI
+  encoding:
+    type: BASE64
+  sign:
+    use: false
+
+  gpki:
+    target-cert-id: SVR1741845003
+    ldap-url: ldap://152.99.57.127:389/cn=
+    force-refresh: false
+    force-refresh-time-millis: 10000
+
+  aria:
+    key-enc: thisIs16ByteKey
+    key-mac: thisIs16ByteKey
+    key-size: 128

@@ -1,0 +1,10 @@
+{
+    "data": [
+        {
+            "name": "${data[0].name}",
+            "address": "${data[0].address}",
+            "family": "${data[0].family}",
+            "aaaa":"as"
+        }
+    ]
+}
